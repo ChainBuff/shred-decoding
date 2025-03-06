@@ -1,0 +1,41 @@
+[package]
+name = "shred-decoding"
+authors = ["oursy"]
+description = "https://github.com/jito-labs/shredstream-proxy jito-shred-decoding"
+homepage = "https://github.com/ChainBuff/shred-decoding"
+version = "0.1.0"
+edition = "2024"
+
+
+[workspace.dependencies]
+tonic-build = "0.10"
+prost-types = "0.12"
+tonic = { version = "0.10", features = ["tls", "tls-roots", "tls-webpki-roots"] }
+prost = "0.12"
+
+[dependencies]
+tokio = "1"
+env_logger = "0.11"
+jito-protos = { path = "jito_protos" }
+dotenvy = "0.15"
+arc-swap = "1.6"
+hostname = "0.4.0"
+itertools = "0.13.0"
+crossbeam-channel = "0.5.8"
+log = "0.4"
+prost = "0.12"
+prost-types = "0.12"
+tonic = { version = "0.10", features = ["tls", "tls-roots", "tls-webpki-roots"] }
+reqwest = { version = "0.11", features = ["json"] }
+serde_json = "1"
+signal-hook = "0.3"
+solana-client = "2"
+solana-metrics = "2"
+solana-net-utils = "2"
+solana-perf = "2"
+solana-sdk = "2"
+solana-streamer = "2"
+solana-ledger = { git = "https://github.com/jito-foundation/jito-solana.git", branch = "eric/v2.2-merkle-recovery", package = "solana-ledger" }
+solana-entry = "2"
+thiserror = "1"
+bincode = "1.3.3"
