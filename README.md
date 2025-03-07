@@ -22,7 +22,7 @@ cp .env.example .env
     - AUTH_KEYPAIR: The path to the authentication keypair JSON file, e.g., keypair.json.
     - DESIRED_REGIONS: A comma-separated list of regions to connect to, e.g., frankfurt,amsterdam,ny.
     - NUM_THREADS: The number of threads for processing, with a minimum of 4.
-    - BIND_ADDR: The address the server binds to, e.g., 127.0.0.1 for local.
+    - BIND_ADDR: The address the server binds to, e.g., 0.0.0.0.
     - BIND_PORT: The port the server binds to, e.g., 20000.
 
 2. Run the Program
